@@ -1,3 +1,6 @@
 # включение icmp
 iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT
 iptables -A OUTPUT -p icmp --icmp-type echo-request -j ACCEPT
+
+# создание snapshot kvm
+sudo virsh snapshot-create-as --domain "name_vm" snapshot --disk-only --atomic --quiesce –no-metadata
