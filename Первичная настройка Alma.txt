@@ -4,3 +4,6 @@ iptables -A OUTPUT -p icmp --icmp-type echo-request -j ACCEPT
 
 # создание snapshot kvm
 sudo virsh snapshot-create-as --domain name_vm name_snapshot --disk-only --atomic --quiesce –no-metadata
+
+# поиск слов в файлах
+grep -r BRANDING /home/socialit/
