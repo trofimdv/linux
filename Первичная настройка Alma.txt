@@ -7,3 +7,6 @@ sudo virsh snapshot-create-as --domain name_vm name_snapshot --disk-only --atomi
 
 # поиск слов в файлах
 grep -r BRANDING /home/socialit/
+
+# дефолтная настройка ubuntu
+sudo apt install nano mc
