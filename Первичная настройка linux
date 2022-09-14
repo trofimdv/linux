@@ -5,8 +5,8 @@ iptables -A OUTPUT -p icmp --icmp-type echo-request -j ACCEPT
 # создание snapshot kvm
 sudo virsh snapshot-create-as --domain name_vm name_snapshot --disk-only --atomic --quiesce –no-metadata
 
-# поиск слов в файлах
-grep -r BRANDING /home/socialit/
-
 # дефолтная настройка ubuntu
-sudo apt install nano mc
+sudo apt-get update
+sudo apt install nano mc net-tools
+sudo visudo
+username ALL=(ALL:ALL) NOPASSWD: ALL
